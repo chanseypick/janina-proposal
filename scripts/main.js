@@ -14,7 +14,7 @@ function yesButton(){
 
 let currentCount = 0;
 function noButton(){
-  let noBtn = document.getElementById("no-button");
+  let yesBtn = document.getElementById("yes-button");
   let noTxt = document.getElementById("no-text");
   
   if(currentCount < noArrayStrings.length){
@@ -22,10 +22,10 @@ function noButton(){
     currentCount++;
   }
 
-  var currwidth = noBtn.clientWidth;
-  var currheight = noBtn.clientHeight;
-  noBtn.style.width = (currwidth + 30) + "px";
-  noBtn.style.height = (currheight + 20) + "px";
+  var currwidth = yesBtn.clientWidth;
+  var currheight = yesBtn.clientHeight;
+  yesBtn.style.width = (currwidth + 30) + "px";
+  yesBtn.style.height = (currheight + 20) + "px";
 }
 
 const noArrayStrings = ["No?", "Are you sure?", "What if I asked really nicely?", "Pretty please", 
